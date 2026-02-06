@@ -504,6 +504,8 @@ button:focus-visible {
   border-radius: 20px;
   transition: all var(--transition);
   letter-spacing: 0.01em;
+  text-decoration: none;
+  cursor: pointer;
 }
 .focus-tag:hover {
   background: var(--gold);
@@ -879,6 +881,22 @@ button:focus-visible {
 }
 .former-name { font-weight: 600; color: var(--gray-900); }
 .former-info { font-size: 0.78rem; color: var(--gray-500); text-align: right; }
+.former-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.former-avatar-placeholder {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--gray-200);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-400);
+}
 
 /* --- Footer --- */
 .site-footer {
